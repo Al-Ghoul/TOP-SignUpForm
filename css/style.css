@@ -35,3 +35,15 @@ body {
   font-size: 4.5rem;
   font-family: Norse-Bold;
 }
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 128px;
+  width: 60%;
+}
+
+.service-container>p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
