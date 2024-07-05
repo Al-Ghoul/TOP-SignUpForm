@@ -2,6 +2,7 @@ body {
   display: flex;
   height: 100vh;
   margin: 0;
+  background-color: #f9fafb;
 }
 
 @font-face {
@@ -19,7 +20,7 @@ body {
 .logo-container {
   display: flex;
   position: relative;
-  top: 30%;
+  top: 15%;
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
@@ -39,11 +40,83 @@ body {
 .main-container {
   display: flex;
   flex-direction: column;
-  padding: 128px;
   width: 60%;
+}
+
+.service-container {
+  padding: 64px 128px;
 }
 
 .service-container>p {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.input-container {
+  padding: 15px 128px;
+  background-color: #FFF;
+  box-shadow: 0 5px 9px 0px rgba(0, 0, 0, 0.75);
+}
+
+label[for="first-name"],
+label[for="last-name"],
+label[for="email"],
+label[for="phone"],
+label[for="password"],
+label[for="confirm-password"] {
+  display: block;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.name-input-container,
+.contact-input-container,
+.password-input-container {
+  display: flex;
+  gap: 64px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+input {
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  padding: 5px;
+  width: 256px;
+}
+
+input:focus {
+  outline: none;
+  border: 0.1px solid blue;
+  box-shadow: 0 0 2px 0.3px black;
+}
+
+input:invalid {
+  border: 0.1px solid red;
+}
+
+#create-act {
+  background-color: #596d48;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 48px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 24px;
+  margin-left: 128px;
+}
+
+.alrdy-have-act {
+  margin-top: 16px;
+  margin-left: 128px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.alrdy-have-act>p>a {
+  color: #596d48;
+  text-decoration: none;
 }
